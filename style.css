@@ -4,15 +4,14 @@
 	box-sizing: border-box;
 }
 
-.overlay {
-	background-color: rgba(0,0,0,0.7);
-	z-index: 10;
-}
 .citta {
 	height: 100vh;
+	/*width non serve per come ancoro lo sfondo sotto*/
 	background-image: url("Resources/roma.jpg");
 	background-size: cover;
 	background-position: center;
+	/*per centrare il nome della città:*/
+	position: relative;
 }
 
 .citta#tokyo {
@@ -24,10 +23,26 @@
 }
 
 .overlay {
-	background-color: rgba(0,0,0,0.7);
-	height: 100vh;
-	width: 100vw;
+	background-color: rgba(0,0,0,0.6);
+	/*posso usare sia % che vh-vw*/
+	height: 100%;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 10;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5rem;
+	letter-spacing: 3px;
+	color: white;
+	text-transform: uppercase;
+	/*centraggio testo all'immagine:*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 20;
 }
