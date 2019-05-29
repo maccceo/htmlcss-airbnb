@@ -1,8 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
+.overlay {
+	background-color: rgba(0,0,0,0.7);
+	z-index: 10;
+}
 .citta {
 	height: 100vh;
 	background-image: url("Resources/roma.jpg");
@@ -10,10 +15,19 @@
 	background-position: center;
 }
 
-#tokyo {
-		background-image: url("Resources/tokyo.jpg");
+.citta#tokyo {
+	background-image: url("Resources/tokyo.jpg");
 }
 
-#casalpuste {
-		background-image: url("Resources/casalpuste.jpg");
+.citta#casalpuste {
+	background-image: url("Resources/casalpuste.jpg");
+}
+
+.overlay {
+	background-color: rgba(0,0,0,0.7);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
