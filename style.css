@@ -10,3 +10,10 @@
 	background-position: center;
 }
 
+#tokyo {
+		background-image: url("Resources/tokyo.jpg");
+}
+
+#casalpuste {
+		background-image: url("Resources/casalpuste.jpg");
+}
